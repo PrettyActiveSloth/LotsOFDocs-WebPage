@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service — LotsOfDocs</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand"><span>LotsOfDocs</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="legal-page">
+    <div class="container">
+      <h1>Terms of Service</h1>
+      <p class="last-updated">Last updated: February 2025</p>
+
+      <p>Please read these Terms of Service ("Terms") carefully before using the LotsOfDocs mobile application ("the app", "we", "our").</p>
+
+      <h2>1. Acceptance of Terms</h2>
+      <p>By downloading, installing, or using LotsOfDocs, you agree to be bound by these Terms. If you do not agree to these Terms, do not use the app.</p>
+
+      <h2>2. Description of Service</h2>
+      <p>LotsOfDocs is a personal organization app that allows you to store documents, notes, and web links on your device. The app is provided as-is for personal, non-commercial use.</p>
+
+      <h2>3. User Content</h2>
+      <p>All content you create or store within LotsOfDocs remains your property. We do not claim ownership of any content you add to the app. Since all data is stored locally on your device, you are solely responsible for maintaining backups of your content.</p>
+
+      <h2>4. Acceptable Use</h2>
+      <p>You agree to use LotsOfDocs only for lawful purposes. You may not use the app to store, organize, or distribute content that violates any applicable laws or regulations.</p>
+
+      <h2>5. Intellectual Property</h2>
+      <p>The LotsOfDocs app, including its design, code, graphics, icons, and overall appearance, is protected by intellectual property laws. You may not copy, modify, distribute, reverse-engineer, or create derivative works based on the app without our prior written consent.</p>
+
+      <h2>6. Disclaimer of Warranties</h2>
+      <p>LotsOfDocs is provided on an <strong>"AS IS"</strong> and <strong>"AS AVAILABLE"</strong> basis without warranties of any kind, whether express or implied. We do not warrant that:</p>
+      <ul>
+        <li>The app will be uninterrupted, error-free, or free of harmful components</li>
+        <li>Any data stored in the app will be preserved indefinitely</li>
+        <li>The app will meet your specific requirements</li>
+      </ul>
+      <p>You use the app at your own risk.</p>
+
+      <h2>7. Limitation of Liability</h2>
+      <p>To the fullest extent permitted by applicable law, in no event shall LotsOfDocs or its developers be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of data, loss of profits, or other intangible losses, arising out of or in connection with your use of the app.</p>
+
+      <h2>8. Data Loss</h2>
+      <p>Since all data is stored locally on your device, we are not responsible for any loss of data due to device failure, app uninstallation, operating system updates, or any other cause. We strongly recommend maintaining your own backups.</p>
+
+      <h2>9. Updates and Changes</h2>
+      <p>We may release updates to the app from time to time. These updates may modify, add, or remove features. We reserve the right to modify these Terms at any time. Continued use of the app after changes constitutes acceptance of the updated Terms.</p>
+
+      <h2>10. Termination</h2>
+      <p>You may stop using LotsOfDocs at any time by uninstalling the app from your device. We reserve the right to discontinue the app at any time without prior notice.</p>
+
+      <h2>11. Governing Law</h2>
+      <p>These Terms shall be governed by and construed in accordance with the laws of your jurisdiction, without regard to conflict of law principles.</p>
+
+      <h2>12. Contact Us</h2>
+      <p>If you have any questions about these Terms, please contact us at:</p>
+      <p><a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>&copy; 2025 LotsOfDocs. All rights reserved.</span>
+      <ul class="footer-links">
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms-of-service.html">Terms of Service</a></li>
+        <li><a href="mailto:your-email@example.com">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    links.querySelectorAll('a').forEach(a =>
+      a.addEventListener('click', () => links.classList.remove('open'))
+    );
+  </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — LotsOfDocs</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand"><span>LotsOfDocs</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="terms-of-service.html">Terms of Service</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="legal-page">
+    <div class="container">
+      <h1>Privacy Policy</h1>
+      <p class="last-updated">Last updated: February 2025</p>
+
+      <p>LotsOfDocs ("we", "our", or "the app") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our mobile application.</p>
+
+      <h2>1. Data Storage</h2>
+      <p>All data you create or store in LotsOfDocs — including documents, notes, saved links, and categories — is stored <strong>locally on your device</strong>. We do not operate any servers that store your personal content. Your data never leaves your device unless you explicitly choose to share or export it.</p>
+
+      <h2>2. No Accounts or Cloud Sync</h2>
+      <p>LotsOfDocs does not require you to create an account. There is no cloud syncing, no user registration, and no login. You own your data completely.</p>
+
+      <h2>3. Analytics</h2>
+      <p>We may use <strong>Firebase Analytics</strong> and <strong>Firebase Crashlytics</strong> (provided by Google) to collect anonymous usage statistics and crash reports. This helps us understand how the app is used and fix bugs. The data collected includes:</p>
+      <ul>
+        <li>App usage patterns (e.g., which screens are visited, feature usage frequency)</li>
+        <li>Device information (e.g., device model, OS version)</li>
+        <li>Crash logs and error reports</li>
+      </ul>
+      <p>This data is anonymous and cannot be used to identify you personally. No personal content (documents, notes, links) is ever sent to analytics services.</p>
+
+      <h2>4. Permissions</h2>
+      <p>LotsOfDocs may request the following device permissions:</p>
+      <ul>
+        <li><strong>Camera:</strong> Used solely for the built-in document scanner. Photos taken are stored locally and are not transmitted anywhere.</li>
+        <li><strong>Biometric Authentication (Face ID / Fingerprint):</strong> Used to secure app access. Biometric data is handled entirely by your device's operating system — we never access, store, or transmit biometric data.</li>
+        <li><strong>Storage / Photos:</strong> Used to import or save documents. Access is limited to files you explicitly select.</li>
+        <li><strong>Internet:</strong> Used to fetch link previews (title, image, description) when you save a URL, and for anonymous analytics. No personal data is transmitted.</li>
+      </ul>
+
+      <h2>5. Third-Party Services</h2>
+      <p>We do not sell, share, or transfer your personal data to any third parties. The only third-party services used are Firebase Analytics and Crashlytics for anonymous usage and crash data as described above.</p>
+
+      <h2>6. Children's Privacy</h2>
+      <p>LotsOfDocs does not knowingly collect personal information from children under the age of 13. Since all data is stored locally and we do not collect personal information, the app is safe for users of all ages.</p>
+
+      <h2>7. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated "Last updated" date. We encourage you to review this page periodically.</p>
+
+      <h2>8. Contact Us</h2>
+      <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
+      <p><a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>&copy; 2025 LotsOfDocs. All rights reserved.</span>
+      <ul class="footer-links">
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms-of-service.html">Terms of Service</a></li>
+        <li><a href="mailto:your-email@example.com">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    links.querySelectorAll('a').forEach(a =>
+      a.addEventListener('click', () => links.classList.remove('open'))
+    );
+  </script>
+</body>
+</html>
